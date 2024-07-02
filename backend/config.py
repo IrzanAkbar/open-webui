@@ -618,7 +618,7 @@ OLLAMA_BASE_URLS = PersistentConfig(
 ENABLE_OPENAI_API = PersistentConfig(
     "ENABLE_OPENAI_API",
     "openai.enable",
-    os.environ.get("ENABLE_OPENAI_API", "True").lower() == "true",
+    os.environ.get("ENABLE_OPENAI_API", "False").lower() == "true",
 )
 
 
